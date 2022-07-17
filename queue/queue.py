@@ -56,15 +56,15 @@ a.dequeue()
 #after deleting last element 
 a.display()
 ------------------------------
-// -- Queue --
-// faculty
-// of
-// computer
-// and
-// information
-// 0
-// -- Queue --
-// faculty
-// of
-// computer
-// and
+#  -- Queue --
+# faculty
+# of
+# computer
+# and
+# information
+# 0
+# -- Queue --
+# faculty
+# of
+# computer
+# and
