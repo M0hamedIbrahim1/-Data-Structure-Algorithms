@@ -1,4 +1,4 @@
-#author : Mohamed Ibrahmim
+#author : Mohamed Ibrahim
 
 def MergeSort(array):
     if len(array) > 1:
