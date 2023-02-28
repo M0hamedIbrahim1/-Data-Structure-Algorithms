@@ -2,6 +2,27 @@
 # author : Mohamed Ibrahim
 
 
+# DFS
+class Solution:
+    def minReorder(self, n: int, connections: List[List[int]]) -> int:
+        graph = collections.defaultdict(list)
+        for x,y in connections:
+            graph[x].append((y,1))
+            graph[y].append((x,-1))
+        visited = [0]*n
+        self.cnt = 0
+
+        def dfs(node):
+            visited[node] = 1
+            for x,d in graph[node]:
+                if not visited[x]:
+                    if d == 1:self.cnt+=1
+                    dfs(x)
+        dfs(0)
+        return self.cnt
+ 
+
+# Stack
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
         undirected_graph = defaultdict(list)
